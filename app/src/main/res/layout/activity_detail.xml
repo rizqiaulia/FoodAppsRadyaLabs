@@ -17,43 +17,56 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:paddingEnd="8dp"
-        android:paddingStart="8dp"
-        android:id="@+id/tv_food_title"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#522C2C2C"
-        android:gravity="center_vertical"
-        android:textSize="18sp"
-        android:lines="1"
-        android:ellipsize="end"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_detail"
-        tools:text="Rendang" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cara Membuat :"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:textSize="16sp"
-        android:textStyle="bold"
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="@id/iv_detail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_detail" />
-
-    <TextView
-        android:id="@+id/tv_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:textSize="14sp"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_marginTop="210dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/background_top_radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="4dp"
+            android:id="@+id/tv_food_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:text="Rendang" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara Membuat :"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
